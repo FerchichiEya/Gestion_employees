@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+    <table class="table table-striped"> 
+    <thead>
+    <tr>
+    <th>Liste de Employe</th>
+    </tr>
+    </thead>
+    <tr> <th>Id Employe</th><th>Nom Prenom</th> <th>Adresse</th> <th>Email </th> <th>Password </th> <th>Role</th> </tr>
+    <tbody *ngFor="let Employe of Employe">
+    <tr >
+    <td>{{Employe.idEmploye}}</td>
+    <td>{{Employe.nom_prenom_Employe}}</td>
+    <td>{{Employe.adresseEmploye}}</td>
+    <td>{{Employe.emailEmploye}}</td>
+    <td>{{Employe.passwordEmploye}}</td>
+    <td>{{Employe.roleEmploye}}</td>
+
+    
+    <td>Supprimer</td>
+
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
